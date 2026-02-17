@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include <GL/freeglut.h>
-#define MINIAUDIO_IMPLEMENTATION
 #include "miniaudio.h"
+
+#define MINIAUDIO_IMPLEMENTATION
+#define fps 60.0
 
 ma_result result;
 ma_engine engine;
 
 int window_res[] = {1280,720};
-float fps = 60.0;
 
 int pd,pl,bs,brx,bry,brw,brl,score,inputs[2],plv,sm;
 float bsp,bdx,bdy,bx,by,px,py,pw,ps;
